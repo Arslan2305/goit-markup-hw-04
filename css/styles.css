@@ -163,7 +163,9 @@ body {
     padding-top: 192px;
     padding-bottom: 192px;
     text-align: center;
-    background: var(--accent-color);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/hero-picture.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 .hero-title {
