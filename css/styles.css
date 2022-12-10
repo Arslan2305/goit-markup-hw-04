@@ -14,9 +14,8 @@
         0px 2px 1px rgba(46, 47, 66, 0.08);
     --portolio-card-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
     --social-list-link-hower-focus-bg-color: #31D0AA;
-    --customers-list-border-color: #8E8F99;
+    --customers-list-color: #8E8F99;
 }
-
 
 /* ДЕФОЛТНІ СКИДАННЯ */
 
@@ -349,8 +348,13 @@ body {
     justify-content: center;
     align-items: center;
     padding: 16px 32px;
-    border: 1px solid var(--customers-list-border-color);
+    border: 1px solid var(--customers-list-color);
     border-radius: 4px;
+    color: var(--customers-list-color);
+}
+
+.customers-list-icon {
+    fill: currentColor;
 }
 
 .customers-list-link:hover,
@@ -358,11 +362,15 @@ body {
     border-color: var(--iris-color);
 }
 
-.customers-list-icon:hover,
+/* .customers-list-icon:hover,
 .customers-list-icon:focus {
     fill: var(--iris-color);
-}
+} */
 
+.customers-list-item>a:hover,
+.customers-list-item>a:focus {
+    color: var(--iris-color);
+}
 
 /* PORTFOLIO */
 
@@ -443,7 +451,8 @@ body {
 .footer .logo-block {
     display: block;
     margin-bottom: 16px;
-    margin-right: 0;
+    /* line-height: 1.17; */
+    /* margin-right: 0; */
 }
 
 .footer {
@@ -453,7 +462,14 @@ body {
 }
 
 .footer-size {
+    margin-left: 0;
+    margin-right: 120px;
     width: 264px;
+}
+
+.footer-position {
+    display: flex;
+    align-items: center;
 }
 
 .logo-cloud-color {
@@ -468,4 +484,42 @@ body {
 
 .footer-text {
     color: var(--footer-text-color);
+}
+
+.title-social-media {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--primary-white-color);
+    margin-bottom: 16px;
+
+}
+
+.footer-social-media {
+    display: block;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.footer-social-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.social-media-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-media-list-link:hover,
+.social-media-list-link:focus {
+    background-color: var(--social-list-link-hower-focus-bg-color);
 }
