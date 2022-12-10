@@ -309,7 +309,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 24px;
-    margin-top: 8px;
+    margin-top: 12px;
 }
 
 .social-list-link {
@@ -363,11 +363,6 @@ body {
 .customers-list-link:focus {
     border-color: var(--iris-color);
 }
-
-/* .customers-list-icon:hover,
-.customers-list-icon:focus {
-    fill: var(--iris-color);
-} */
 
 .customers-list-item>a:hover,
 .customers-list-item>a:focus {
@@ -445,8 +440,12 @@ body {
     padding-left: 16px;
 }
 
-.portfolio-list-card:hover,
-.portfolio-list-card:focus {
+.portfolio-link {
+    display: block;
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
 
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
