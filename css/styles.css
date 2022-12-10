@@ -451,8 +451,6 @@ body {
 .footer .logo-block {
     display: block;
     margin-bottom: 16px;
-    /* line-height: 1.17; */
-    /* margin-right: 0; */
 }
 
 .footer {
@@ -469,7 +467,7 @@ body {
 
 .footer-position {
     display: flex;
-    align-items: center;
+    align-items: baseline;
 }
 
 .logo-cloud-color {
@@ -499,7 +497,6 @@ body {
     display: block;
     align-items: center;
     justify-content: center;
-
 }
 
 .footer-social-list {
